@@ -1,3 +1,77 @@
-<h1>
-  {{title}}
-</h1>
+<section class="alt-section section-work">
+  <h3 id="works">Works</h3>
+
+  <div class="work-belt" [ngStyle]="{'left': size+'%' }">
+
+    <div class="thumb-wrap">
+      <div class="thumb-container">
+        <div class="thumb-unit" data-folder="proj-1" style="background-image: url(assets/img/work/proj-1/thumb.jpg)  "  (click)="workBelt()">
+          <div class="thumb-overlay"> <strong>Typo International</strong>
+            <div class="zoom-icon"></div>
+          </div>
+        </div>
+
+        <div class="thumb-unit" data-folder="proj-2" style="background-image: url(assets/img/work/proj-2/thumb.jpg)  ">
+          <div class="thumb-overlay">
+            <strong>Typo International 1</strong>
+            <div class="zoom-icon"></div>
+          </div>
+        </div>
+
+        <div class="thumb-unit" data-folder="proj-3" style="background-image: url(assets/img/work/proj-3/thumb.jpg)  ">
+          <div class="thumb-overlay">
+            <strong>Typo International 2</strong>
+            <div class="zoom-icon"></div>
+          </div>
+        </div>
+
+        <div class="thumb-unit" data-folder="proj-4" style="background-image: url(assets/img/work/proj-4/thumb.jpg)  ">
+          <div class="thumb-overlay">
+            <strong>Typo International 3</strong>
+            <div class="zoom-icon"></div>
+          </div>
+        </div>
+
+        <div class="thumb-unit" data-folder="proj-5" style="background-image: url(assets/img/work/proj-5/thumb.jpg)  ">
+          <div class="thumb-overlay">
+            <strong>Typo International</strong>
+            <div class="zoom-icon"></div>
+          </div>
+        </div>
+
+        <div class="thumb-unit" data-folder="proj-6" style="background-image: url(assets/img/work/proj-6/thumb.jpg)  ">
+          <div class="thumb-overlay">
+            <strong>Typo International</strong>
+            <div class="zoom-icon"></div>
+          </div>
+        </div>
+
+        <div class="thumb-unit" data-folder="proj-7" style="background-image: url(assets/img/work/proj-7/thumb.jpg)  ">
+          <div class="thumb-overlay">
+            <strong>Typo International</strong>
+            <div class="zoom-icon"></div>
+          </div>
+        </div>
+
+        <div class="thumb-unit" data-folder="proj-8" style="background-image: url(assets/img/work/proj-8/thumb.jpg)  ">
+          <div class="thumb-overlay">
+            <strong>Typo International</strong>
+            <div class="zoom-icon"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <div class="work-wrap">
+        <div class="work-container" [ngStyle]="{'display': show }">
+          <div class="work-return" (click)="returnWorkBelt()"><img src="assets/_includes/icons/icon-back.svg"></div>
+          <h4 class="project-title">Do work</h4>
+          <div class="project-load"></div>
+
+        </div>
+      </div>
+
+  </div>
+
+  </section>
